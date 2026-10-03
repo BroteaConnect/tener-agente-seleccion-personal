@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "composer": "0.7.0",
+  "stack": "astro",
+  "template": {
+    "name": "astro",
+    "version": "1.3.0",
+    "owned": "1.3.0"
+  },
+  "project": {
+    "slug": "tener-agente-seleccion-personal",
+    "name": "Recluta",
+    "description": "Recruiting agent: takes CVs and interviews candidates over WhatsApp"
+  },
+  "runtime": {
+    "port": 80,
+    "health": "/"
+  },
+  "features": {
+    "landing": {
+      "version": "2.0.0",
+      "files": [
+        "src/pages/[...lang]/index.astro"
+      ]
+    }
+  },
+  "theme": {
+    "name": "brotea",
+    "version": "2.2.0"
+  },
+  "i18n": {
+    "defaultLocale": "es",
+    "locales": [
+      "en",
+      "es"
+    ],
+    "required": [
+      "en",
+      "es"
+    ],
+    "runtime": "1.0.0"
+  }
+}
